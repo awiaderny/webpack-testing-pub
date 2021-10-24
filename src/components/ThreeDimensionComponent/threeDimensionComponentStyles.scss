@@ -1,0 +1,86 @@
+@use '../../containerStyles.scss';
+@import '../../containerStyles.scss';
+@use '../CounterComponent/counterStyles.scss';
+@import '../CounterComponent/counterStyles.scss';
+
+$min-width: 1200px;
+
+.three-dimension-container {
+	background-color: #fff;
+	grid-column: 1/-1;
+	min-height: 100vh;
+	min-width: 100%;
+	position: relative;
+}
+
+.container-pet {
+	left: 50vw;
+	position: absolute;
+	top: 2rem;
+	transform: translate(-50%);
+	width: 100%;
+	@media (min-width: $min-width) {
+		top: 25vh;
+	}
+}
+
+.container-flex-pet {
+	@include flexCenter(column);
+	@media (min-width: $min-width) {
+		flex-direction: row;
+	}
+}
+
+.container-choose-pet {
+	margin: 2rem 0;
+	@media (min-width: $min-width) {
+		margin: 0 3rem;
+	}
+	&-duck {
+		height: 8rem;
+		width: 16rem;
+		@media (min-width: $min-width) {
+			height: 20rem;
+			width: 50rem;
+		}
+	}
+	&-cow {
+		height: 5rem;
+		width: 12rem;
+		@media (min-width: $min-width) {
+			height: 14rem;
+			width: 25rem;
+		}
+	}
+	&-chicken {
+		height: 7rem;
+		width: 22rem;
+		@media (min-width: $min-width) {
+			height: 20rem;
+			width: 40rem;
+		}
+	}
+}
+
+.container-choose-pet-btn__choose-btn {
+	&-duck,
+	&-cow,
+	&-chicken {
+		@include btn-style;
+	}
+}
+
+.slide-1__heading {
+	background-color: rgba(23, 6, 0, 0.7);
+	border-radius: 10px;
+	color: white;
+	font-size: 2rem;
+	padding: 0.2em;
+	position: absolute;
+	top: -1.5rem;
+	z-index: 1;
+	@media (min-width: $min-width) {
+		font-size: 4rem;
+		top: 3rem;
+	}
+}

@@ -1,0 +1,37 @@
+@use '../../_variables.scss';
+@import '../../_variables.scss';
+@use '../CounterComponent/counterStyles.scss';
+@import '../CounterComponent/counterStyles.scss';
+
+@mixin input-style {
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.1);
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0.4rem;
+	padding: 0.5em;
+	&:focus {
+		outline: none;
+		box-shadow: 0px 0px 8px $input-style-focus-shadow-color;
+	}
+}
+
+input[type='text'] {
+	@include input-style;
+}
+
+.container-form {
+	border-radius: 20px;
+	margin: 0 auto;
+	padding: 0.1rem;
+	width: 19rem;
+	&__input-with-label {
+		div {
+			display: block;
+			@media (orientation: landscape) {
+				display: inline;
+			}
+		}
+	}
+}

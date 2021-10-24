@@ -1,0 +1,19 @@
+@use '../../containerStyles.scss';
+@import '../../containerStyles.scss';
+
+.fetch-section {
+	@include flexCenter(column);
+	justify-content: flex-start;
+	font-size: 1rem;
+	height: 22rem;
+	position: absolute;
+	width: 15rem;
+	@include lg {
+		font-size: 1.5rem;
+		width: 22rem;
+	}
+	&__quote,
+	&__quote-author {
+		@include flexCenter(row);
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"presets": [
+		[
+			"@babel/env",
+			{
+				"useBuiltIns": false
+			}
+		],
+		"@babel/react",
+		"@babel/preset-typescript"
+	],
+	"env": {
+		"development": {}
+	}
+}

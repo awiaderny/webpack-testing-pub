@@ -1,0 +1,126 @@
+{
+	"defaultSeverity": "error",
+	"extends": ["tslint:latest", "tslint-react", "tslint-react-hooks"],
+	"jsRules": {},
+	"rules": {
+		"align": true,
+		"array-type": [true, "array"],
+		"arrow-parens": false,
+		"arrow-return-shorthand": true,
+		"await-promise": true,
+		"ban-comma-operator": true,
+		"binary-expression-operand-order": true,
+		"class-name": true,
+		"comment-format": false,
+		"curly": true,
+		"cyclomatic-complexity": true,
+		"deprecation": true,
+		"eofline": true,
+		"file-name-casing": [
+			true,
+			{
+				".tsx": "pascal-case",
+				".ts": "camel-case"
+			}
+		],
+		"forin": true,
+		"increment-decrement": true,
+		"interface-name": false,
+		"interface-over-type-literal": true,
+		"jsx-boolean-value": false,
+		"jsx-key": true,
+		"jsx-no-lambda": true,
+		"jsx-no-string-ref": true,
+		"linebreak-style": [true, "LF"],
+		"member-ordering": false,
+		"newline-before-return": true,
+		"newline-per-chained-call": false,
+		"no-any": true,
+		"no-async-without-await": true,
+		"no-bitwise": true,
+		"no-boolean-literal-compare": true,
+		"no-conditional-assignment": true,
+		"no-consecutive-blank-lines": true,
+		"no-console": false,
+		"no-default-export": true,
+		"no-duplicate-imports": [
+			true,
+			{
+				"allow-namespace-imports": true
+			}
+		],
+		"no-duplicate-switch-case": true,
+		"no-duplicate-variable": [true, "check-parameters"],
+		"no-empty": true,
+		"no-empty-interface": true,
+		"no-floating-promises": true,
+		"no-for-in-array": true,
+		"no-implicit-dependencies": false,
+		"no-inferrable-types": true,
+		"no-invalid-template-strings": true,
+		"no-namespace": false,
+		"no-parameter-reassignment": true,
+		"no-reference": false,
+		"no-return-await": true,
+		"no-shadowed-variable": true,
+		"no-sparse-arrays": true,
+		"no-string-literal": true,
+		"no-string-throw": true,
+		"no-submodule-imports": false,
+		"no-switch-case-fall-through": true,
+		"no-unnecessary-initializer": true,
+		"no-unsafe-finally": true,
+		"no-unused-expression": [true, "allow-fast-null-checks"],
+		"no-unused-variable": [
+			true,
+			{
+				"ignore-pattern": "^_"
+			}
+		],
+		"no-use-before-declare": true,
+		"no-var-keyword": true,
+		"no-var-requires": false,
+		"no-void": true,
+		"number-literal-format": true,
+		"object-literal-shorthand": true,
+		"object-literal-sort-keys": true,
+		"one-variable-per-declaration": true,
+		"only-arrow-functions": true,
+		"ordered-imports": true,
+		"prefer-conditional-expression": true,
+		"prefer-const": true,
+		"prefer-for-of": true,
+		"prefer-method-signature": true,
+		"prefer-object-spread": true,
+		"prefer-switch": [
+			true,
+			{
+				"min-cases": 2
+			}
+		],
+		"prefer-template": true,
+		"promise-function-async": true,
+		"quotemark": [true, "single"],
+		"react-hooks-nesting": {
+			"options": {
+				"detect-hooks-from-non-react-namespace": true
+			},
+			"severity": "error"
+		},
+		"restrict-plus-operands": true,
+		"return-undefined": true,
+		"semicolon": true,
+		"switch-default": true,
+		"trailing-comma": false,
+		"triple-equals": [true, "allow-null-check", "allow-undefined-check"],
+		"typedef-whitespace": false,
+		"unified-signatures": true,
+		"unnecessary-else": true,
+		"use-default-type-parameter": true,
+		"use-isnan": true,
+		"variable-name": {
+			"options": ["ban-keywords", "check-format", "allow-leading-underscore", "require-const-for-all-caps", "allow-pascal-case"]
+		}
+	},
+	"rulesDirectory": []
+}

@@ -1,0 +1,74 @@
+@use '../../_variables.scss';
+@import '../../_variables.scss';
+@use '../../containerStyles.scss';
+@import '../../containerStyles.scss';
+
+@mixin btn-style {
+	background-color: $btn-style-background-color;
+	border-radius: 8px;
+	border: none;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+	color: $btn-style-text-color;
+	cursor: pointer;
+	font-family: inherit;
+	line-height: 1.1;
+	min-height: 44px;
+	min-width: 10ch;
+	padding: 0.25em 0.75em;
+	text-align: center;
+	transition: 300ms background-color ease-in-out;
+	&:hover,
+	&:active {
+		background-color: scale-color($btn-style-background-color, $lightness: -20%);
+	}
+	&:focus {
+		box-shadow: 0 0 0 4px scale-color($btn-style-background-color, $lightness: -40%);
+		outline-color: transparent;
+		outline-style: solid;
+	}
+	@media screen and (-ms-high-contrast: active) {
+		border: 2px solid currentcolor;
+	}
+}
+
+.btn {
+	@include btn-style;
+}
+
+.section-counter {
+	@include flexCenter(column);
+	height: 5rem;
+	margin: auto;
+	padding: 0.1rem;
+	@include lg {
+		flex-direction: column;
+		height: auto;
+	}
+	&__container-decrement {
+		margin: auto 1rem;
+	}
+	&__container-increment {
+		margin: auto 1rem;
+	}
+	&-container {
+		display: inline;
+		position: absolute;
+		top: 0rem;
+		@include lg {
+			position: relative;
+			top: 0rem;
+		}
+	}
+	&__count-value {
+		font-size: 1.3rem;
+	}
+	&-buttons {
+		@include flexCenter(row);
+		position: absolute;
+		top: 2.5rem;
+		@include lg {
+			position: relative;
+			top: 0;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+ "autorun": true,
+ "terminals": [
+  {
+   "name": "Single",
+   "description": "single terminal window",
+   "focus": true,
+   "execute": false
+  },
+  {
+   "name": "vifm",
+   "command": "vifm",
+   "execute": true,
+   "persistent": "vifm"
+  }
+ ]
+}

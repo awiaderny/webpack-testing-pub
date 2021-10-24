@@ -1,0 +1,134 @@
+@use '../../containerStyles.scss';
+@import '../../containerStyles.scss';
+@use '../CounterComponent/counterStyles.scss';
+@import '../CounterComponent/counterStyles.scss';
+
+#wave1 {
+	z-index: 0;
+}
+
+.btn-reward {
+	z-index: 1;
+}
+
+.container-reward {
+	overflow: hidden;
+	&__btn-reward {
+		@include btn-style;
+		left: 50vw;
+		position: absolute;
+		top: 10rem;
+		transform: translate(-50%);
+		z-index: 1;
+	}
+	&__container-treasure-img {
+		margin: 0.3rem;
+		overflow: visible;
+		width: 100%;
+	}
+	&__treasure-img {
+		left: 50vw;
+		margin: 0 auto;
+		position: absolute;
+		transform: translate(-50%);
+		top: 40vh;
+		@include lg {
+			top: 30vh;
+		}
+		@include xl {
+			top: 35vh;
+		}
+	}
+	&__container-sun-img {
+		margin: 0.3rem;
+		overflow: visible;
+	}
+	&__sun-img {
+		left: 0.1rem;
+		margin: 1rem auto auto;
+		position: absolute;
+		top: 0.1rem;
+		@include lg {
+			left: 5rem;
+			top: 3rem;
+		}
+		@include xl {
+			top: 2rem;
+		}
+	}
+	&__container-cloud-img {
+		margin: 0.3rem;
+		overflow: visible;
+	}
+	&__cloud-img {
+		margin: 1rem auto auto;
+		position: absolute;
+		right: 5rem;
+		top: -1rem;
+		width: 200px;
+		z-index: 0;
+		@include xl {
+			right: 1rem;
+			top: -1rem;
+			width: 100px;
+		}
+	}
+	&__sand-background {
+		background: #f9e3be;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 35rem;
+		@include lg {
+			height: 33rem;
+		}
+	}
+	&-part {
+		background: #0099ff;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 28rem;
+		@include lg {
+			height: 22rem;
+		}
+		&__svg-wave1 {
+			fill: #0099ff;
+			left: 0;
+			pointer-events: none;
+			position: absolute;
+			width: 100%;
+			z-index: 0;
+			bottom: 27.9rem;
+			@include lg {
+				bottom: 21.9rem;
+			}
+		}
+	}
+	&__container-heading {
+		width: 100vw;
+	}
+	&__heading {
+		font-size: 2rem;
+		margin: 0 auto;
+		position: absolute;
+		text-align: center;
+		top: 2rem;
+		width: 100%;
+		z-index: 1;
+		p {
+			font-size: 1.3rem;
+		}
+	}
+	&__info-treasure-opened {
+		bottom: 5rem;
+		color: white;
+		font-size: 4rem;
+		margin: 0 auto;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+}

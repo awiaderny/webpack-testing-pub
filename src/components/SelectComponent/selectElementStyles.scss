@@ -1,0 +1,80 @@
+@use '../../containerStyles.scss';
+@import '../../containerStyles.scss';
+
+.container-select {
+	height: 15rem;
+	margin: auto;
+	z-index: 2;
+}
+
+.select-wrapper {
+	margin: 0.5rem auto;
+	&__list {
+		list-style: none;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 0;
+		z-index: 2;
+	}
+	&__list-item {
+		background-color: white;
+		border: 1px solid black;
+		margin: 0 auto;
+		padding: 5px;
+		width: 9rem;
+		z-index: 1;
+		span {
+			cursor: pointer;
+		}
+	}
+}
+
+.select-header {
+	background-color: white;
+	border: 1px solid black;
+	margin: 0 auto;
+	outline: none;
+	padding: 0.625rem;
+	position: relative;
+	width: 9rem;
+	z-index: 1;
+	&__title {
+		cursor: pointer;
+		span {
+			margin: auto auto auto 8px;
+		}
+	}
+}
+
+.heading__picked-color {
+	margin: 4rem auto 0;
+	width: 12rem;
+}
+
+.select-header__arrow-img {
+	width: 20px;
+}
+
+.img-cloud {
+	margin: 0 auto;
+	pointer-events: none;
+	position: absolute;
+	transform: translate(-50%, 5%);
+	z-index: -1;
+	height: 10rem;
+	@include lg {
+		height: 12rem;
+	}
+	&-path--blue {
+		stroke: blue;
+	}
+	&-path--red {
+		stroke: red;
+	}
+	&-path--green {
+		stroke: green;
+	}
+	&-path--yellow {
+		stroke: yellow;
+	}
+}
