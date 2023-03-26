@@ -6,8 +6,6 @@ start" or "yarn start". Only code preview is available.
 Repository for learning purposes. Exercise mainly for
 Webpack and Web App Testing.
 
-## [View website live demo here](https://awiaderny.github.io/webpack-testing/)
-
 <h1 align="left">Languages and Tools:</h1>
 <p align="left">
  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/html5/html5-plain-wordmark.svg" alt="html5" width="40" height="40"/> </a>
